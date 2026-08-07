@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+
+    <!-- CountUp -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/countup.js/2.6.2/countUp.umd.js"></script>
+
+    <!-- Font Awesome for icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+<!--DM Sans_font1-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+        rel="stylesheet">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="images/favicon.svg" type="image/x-icon">
+</head>
+
+<body>
+
+    <!-- header -->
+    <header>
+        <div class="inner header_wrap">
+            <div class="logo">PORTFOLIO</div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Portfolio</a></li>
+                    <li><a href="#artwork">Artwork</a></li>
+                </ul>
+            </nav>
+            <div class="contact-btn"><a href="#contact">Contact</a></div>
+            <div class="menu-toggle" id="mobile-menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- mobile nav -->
+    <div class="mobile-nav" id="mobile-nav">
+        <div class="mobile-close-btn" id="mobile-close-btn">X</div>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Portfolio</a></li>
+            <li><a href="#artwork">Artwork</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- main banner 영상 -->
+    <main>
+        <section class="main_banner">
+            <video class="bg_video" src="./video/main-demo.mp4" autoplay muted loop playsinline></video>
+
+
+        </section>
+    </main>
+
+    <div class="container">
+
+        <!-- About -->
+        <section id="about" data-aos="fade-up">
+            <div class="inner">
+                <div class="grid-2">
+                    <div class="reveal">
+                        <div class="about-me">
+                            <!-- 본인 사진 및 영상 넣는 곳 -->
+                            <video src="./video/about_me.mp4" autoplay muted loop playsinline></video>
+                        </div>
+
+                    </div>
+
+                    <div class="about-cards reveal" style="transition-delay: 0.2s;">
+                        <h2 class="about-title">안녕하세요,<br>디자이너 고하늘입니다.</h2>
+                        <p class="about-desc">
+                            익숙한 방식에 안주하지 않고
+                            새로운 시도를 통해 더 나은 디자인을 찾고자 합니다.<br>
+                            새로운 시선으로 한 번 더 머물게 하고,
+                            오래 기억에 남는 디자인을 지향합니다.
+                        </p>
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <div class="timeline-year">2022.12 - 2025.04</div>
+                                <div class="timeline-role">
+                                    <strong>디자인혼</strong>
+                                    <span>다양한 인쇄물 디자인, 사이니지 및 공간 그래픽 디자인,<br> 팝업 행사·전시 패널 디자인까지 폭넓은 프로젝트 수행</span>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-year">2020.01 - 2022.03</div>
+                                <div class="timeline-role">
+                                    <strong>파스텔 스튜디오</strong>
+                                    <span>촬영 이미지의 인물 리터칭, 색보정과 함께<br> 다양한 그래픽 소스를 활용한 합성 및 연출 디자인 작업 수행</span>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-year">2013.03 - 2016.02</div>
+                                <div class="timeline-role">
+                                    <strong>앤콕 스튜디오</strong>
+                                    <span>다양한 콘셉트와 연령층의 인물 사진 리터칭, 이미지 합성 및 색보정 업무를 수행</span>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="banner_content inner">
+                <div class="stats">
+                    <div class="stat">
+                        <strong data-target="95">0</strong>
+                        <img src="./images/icon1.svg" alt="icon1">
+                    </div>
+                    <div class="stat">
+                        <strong data-target="70">0</strong>
+                        <img src="./images/icon2.svg" alt="icon1">
+                    </div>
+                    <div class="stat">
+                        <strong data-target="60">0</strong>
+                        <img src="./images/icon3.svg" alt="icon1">
+                    </div>
+                    <div class="stat">
+                        <strong data-target="90">0</strong>
+                        <img src="./images/icon4.svg" alt="icon1">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 프로젝트 -->
+        <section id="projects">
+            <div class="inner">
+                <!-- title -->
+                <div class="title">
+                    <span>Website</span>
+                </div>
+                <div class="fitme_title">
+                    <h2>Fitme</h2>
+                    <p>FITME는 부산 곳곳에 숨겨진 감성적인 로컬 패션 브랜드와 스타일을 발견하고,<br> 누구나 쉽고 즐겁게 탐색할 수 있도록 기획된 패션 큐레이션 플랫폼이다.</p>
+                    <p class="Platform">Fashion Curation Platform</p>
+                </div>
+
+                <div class="project-list">
+                    <!-- Project 1 -->
+                    <div class="project-item reveal" data-aos="fade-right">
+                        <div class="project-thumb ">
+                            <div class="thumb-inner">
+                                <!-- 프로젝트 썸네일 이미지/영상 -->
+                                <!-- <img src="./images/bibx.png" alt="brand"> -->
+                                <video src="./video/bibx_video.mp4" autoplay muted loop playsinline></video>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            
+                            <h1>BI/BX guide</h1>
+                            
+                            <p>FITME의 BI/BX는 로컬 패션 브랜드를 쉽고 즐겁게 발견하는 경험을 중심으로 설계되었습니다. 사용자가 숨겨진 브랜드와 스타일을 자연스럽게 탐색하고, 새로운 패션 경험을 이어갈 수 있도록 친근하면서도 감각적인 브랜드 아이덴티티를 구축했습니다.
+                            <a href="./BIBX_guide.html" class="btn-view" target="_blank">
+                                
+                                <div class="arrow-button">
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="project-item reverse reveal" data-aos="fade-left">
+                        <div class="project-info">
+            
+                        
+                            <h1>WEB guide</h1>
+                            <p>사용자가 로컬 패션 브랜드를 쉽고 즐겁게 탐색할 수 있도록 직관적인 인터페이스와 명확한 정보 구조를 설계했습니다. 일관된 디자인 시스템을 통해 편리한 사용성과 몰입감 있는 탐색 경험을 제공합니다.</p>
+                            <a href="./web_guide.html" class="btn-view" target="_blank">
+                               
+                                <div class="arrow-button">
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="project-thumb">
+                            <div class="thumb-inner">
+                                <!-- 프로젝트 썸네일 이미지 -->
+                                <video src="./video/webguide_video.mp4" autoplay muted loop playsinline></video>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 3 -->
+                    <div class="project-item reveal" data-aos="fade-right">
+                        <div class="project-thumb">
+                            <div class="thumb-inner">
+                                <!-- 프로젝트 썸네일 이미지 -->
+                                <video src="./video/mainsite_video.mp4" autoplay muted loop playsinline></video>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            
+                            
+                            <h1>Visit Live Site</h1>
+                            <p>직접 웹사이트를 둘러보며 FITME만의 탐색 경험을 만나보세요. 직관적인 UI와 사용자 중심의 인터페이스를 통해 로컬 패션을 더욱 쉽고 즐겁게 발견할 수 있습니다.</p>
+                            <a href="https://haneulg.github.io/fitme/" class="btn-view" target="_blank">
+                             
+                                <div class="arrow-button">
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Digital -->
+        <section id="artwork">
+            <div class="inner">
+                <!-- title -->
+                <div class="title">
+                    <span>Digital</span>
+                </div>
+
+                <!-- Portfolio Grid -->
+                <div class="portfolio-grid" data-aos="fade-up">
+
+                    <!-- Item 1: Clyc -->
+                    <a href="#" class="portfolio-item">
+                        <div class="card-visual" style="background: #f4f4f5;">
+                            <!-- 아트웍 이미지 -->
+                            <img src="./images/Digital1.jpg" alt="">
+                        </div>
+                        <div class="card-info">
+                            <div class="info-text">
+                                <h3>Artwork01</h3>
+                                <p>Artwork</p>
+                            </div>
+                            <!-- <div class="arrow-button">
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </div> -->
+                            <div class="skill-icon">
+                                <img src="./images/aftereffects.png" alt="aftereffects">
+                                <img src="./images/figma.png" alt="figma">
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Item 2: Hydra -->
+                    <a href="#" class="portfolio-item">
+                        <div class="card-visual" style="background: #f4f4f5;">
+                            <!-- 아트웍 이미지 -->
+                            <img src="./images/Digital2.jpg" alt="">
+                        </div>
+                        <div class="card-info">
+                            <div class="info-text">
+                                <h3>Artwork02</h3>
+                                <p>Artwork</p>
+                            </div>
+                            <!-- <div class="arrow-button">
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </div> -->
+                            <div class="skill-icon">
+                                <img src="./images/css_icon.png" alt="css">
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Item 3: Kayak -->
+                    <a href="./abeeno.html" class="portfolio-item">
+                        <div class="card-visual" style="background: #f4f4f5;">
+                            <!-- 아트웍 이미지 -->
+                            <img src="./images/Digital3.jpg" alt="">
+                        </div>
+                        <div class="card-info">
+                            <div class="info-text">
+                                <h3>Artwork03</h3>
+                                <p>Artwork</p>
+                            </div>
+                            <!-- <div class="arrow-button">
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </div> -->
+                            <div class="skill-icon">
+                                <img src="./images/illustrator.png" alt="illustrator">
+                                <img src="./images/indesign.png" alt="indesign">
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+         <!-- Editorial -->
+        <section id="artwork">
+            <div class="inner">
+                <!-- title -->
+                <div class="title">
+                    <span>Editorial</span>
+                </div>
+
+                <!-- Portfolio Grid -->
+                <div class="portfolio-grid" data-aos="fade-up">
+
+                    <!-- Item 1: Clyc -->
+                    <a href="#" class="portfolio-item">
+                        <div class="card-visual" style="background: #f4f4f5;">
+                            <!-- 아트웍 이미지 -->
+                            <img src="./images/Editorial1.jpg" alt="">
+                        </div>
+                        <div class="card-info">
+                            <div class="info-text">
+                                <h3>Artwork01</h3>
+                                <p>Artwork</p>
+                            </div>
+                            <!-- <div class="arrow-button">
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </div> -->
+                            <div class="skill-icon">
+                                <img src="./images/aftereffects.png" alt="aftereffects">
+                                <img src="./images/figma.png" alt="figma">
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Item 2: Hydra -->
+                    <a href="#" class="portfolio-item">
+                        <div class="card-visual" style="background: #f4f4f5;">
+                            <!-- 아트웍 이미지 -->
+                            <img src="./images/Editorial2.jpg" alt="">
+                        </div>
+                        <div class="card-info">
+                            <div class="info-text">
+                                <h3>Artwork02</h3>
+                                <p>Artwork</p>
+                            </div>
+                            <!-- <div class="arrow-button">
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </div> -->
+                            <div class="skill-icon">
+                                <img src="./images/css_icon.png" alt="css">
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Item 3: Kayak -->
+                    <a href="#" class="portfolio-item">
+                        <div class="card-visual" style="background: #f4f4f5;">
+                            <!-- 아트웍 이미지 -->
+                            <img src="./images/Editorial3.jpg" alt="">
+                        </div>
+                        <div class="card-info">
+                            <div class="info-text">
+                                <h3>Artwork03</h3>
+                                <p>Artwork</p>
+                            </div>
+                            <!-- <div class="arrow-button">
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </div> -->
+                            <div class="skill-icon">
+                                <img src="./images/illustrator.png" alt="illustrator">
+                                <img src="./images/indesign.png" alt="indesign">
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Item 4: Logotypes & Marks -->
+                    <a href="#" class="portfolio-item">
+                        <div class="card-visual" style="background: #f4f4f5;">
+                            <!-- 아트웍 이미지 -->
+                            <img src="./images/Editorial4.jpg" alt="">
+                        </div>
+                        <div class="card-info">
+                            <div class="info-text">
+                                <h3>Artwork04</h3>
+                                <p>Artwork</p>
+                            </div>
+                            <!-- <div class="arrow-button">
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </div> -->
+                            <div class="skill-icon">
+                                <img src="./images/html_icon.png" alt="html">
+                                <img src="./images/js_icon.png" alt="js">
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Item 5: Project 05 -->
+                    <a href="#" class="portfolio-item">
+                        <div class="card-visual" style="background: #f4f4f5;">
+                            <!-- 아트웍 이미지 -->
+                            <img src="./images/Editorial5.jpg" alt="">
+                        </div>
+                        <div class="card-info">
+                            <div class="info-text">
+                                <h3>Artwork05</h3>
+                                <p>Artwork</p>
+                            </div>
+                            <!-- <div class="arrow-button">
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </div> -->
+                            <div class="skill-icon">
+                                <img src="./images/photoshop.png" alt="photoshop">
+                                <img src="./images/illustrator.png" alt="illustrator">
+                                <img src="./images/premiere.png" alt="premiere">
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Item 6: Project 06 -->
+                    <a href="#" class="portfolio-item">
+                        <div class="card-visual" style="background: #f4f4f5;">
+                            <!-- 아트웍 이미지 -->
+                            <img src="./images/Editorial6.jpg" alt="">
+                        </div>
+                        <div class="card-info">
+                            <div class="info-text">
+                                <h3>Artwork06</h3>
+                                <p>Artwork</p>
+                            </div>
+                            <!-- <div class="arrow-button">
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </div> -->
+                            <div class="skill-icon">
+                                <img src="./images/vs_code.png" alt="vs_code">
+                            </div>
+                        </div>
+                    </a>
+
+                   
+                </div>
+            </div>
+        </section>
+
+        <!-- Logo -->
+        <section id="artwork">
+            <div class="inner">
+                <!-- title -->
+                <div class="title">
+                    <span>Logo</span>
+                </div>
+
+                <!-- Portfolio Grid -->
+                <div class="portfolio-grid" data-aos="fade-up">
+
+                    <!-- Item 1: Clyc -->
+                    <a href="#" class="portfolio-item">
+                        <div class="card-visual" style="background: #f4f4f5;">
+                            <!-- 아트웍 이미지 -->
+                            <img src="./images/Logo1.jpg" alt="">
+                        </div>
+                        <div class="card-info">
+                            <div class="info-text">
+                                <h3>Artwork01</h3>
+                                <p>Artwork</p>
+                            </div>
+                            <!-- <div class="arrow-button">
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </div> -->
+                            <div class="skill-icon">
+                                <img src="./images/aftereffects.png" alt="aftereffects">
+                                <img src="./images/figma.png" alt="figma">
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Item 2: Hydra -->
+                    <a href="#" class="portfolio-item">
+                        <div class="card-visual" style="background: #f4f4f5;">
+                            <!-- 아트웍 이미지 -->
+                            <img src="./images/Logo2.jpg" alt="">
+                        </div>
+                        <div class="card-info">
+                            <div class="info-text">
+                                <h3>Artwork02</h3>
+                                <p>Artwork</p>
+                            </div>
+                            <!-- <div class="arrow-button">
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </div> -->
+                            <div class="skill-icon">
+                                <img src="./images/css_icon.png" alt="css">
+                            </div>
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Exhibition -->
+        <section id="artwork">
+            <div class="inner">
+                <!-- title -->
+                <div class="title">
+                    <span>Exhibition</span>
+                </div>
+
+                <!-- Portfolio Grid -->
+                <div class="portfolio-grid" data-aos="fade-up">
+
+                    <!-- Item 1: Clyc -->
+                    <a href="#" class="portfolio-item">
+                        <div class="card-visual" style="background: #f4f4f5;">
+                            <!-- 아트웍 이미지 -->
+                            <img src="./images/Exhibition1.jpg" alt="">
+                        </div>
+                        <div class="card-info">
+                            <div class="info-text">
+                                <h3>Artwork01</h3>
+                                <p>Artwork</p>
+                            </div>
+                            <!-- <div class="arrow-button">
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </div> -->
+                            <div class="skill-icon">
+                                <img src="./images/aftereffects.png" alt="aftereffects">
+                                <img src="./images/figma.png" alt="figma">
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Item 2: Hydra -->
+                    <a href="#" class="portfolio-item">
+                        <div class="card-visual" style="background: #f4f4f5;">
+                            <!-- 아트웍 이미지 -->
+                            <img src="./images/Exhibition2.jpg" alt="">
+                        </div>
+                        <div class="card-info">
+                            <div class="info-text">
+                                <h3>Artwork02</h3>
+                                <p>Artwork</p>
+                            </div>
+                            <!-- <div class="arrow-button">
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </div> -->
+                            <div class="skill-icon">
+                                <img src="./images/css_icon.png" alt="css">
+                            </div>
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+        <!-- 비디오 모달 -->
+        <div id="videoModal">
+            <div class="modal-body" id="modalContainer">
+                <div class="btn-close" onclick="closeModal()">CLOSE ×</div>
+                <div id="videoPlayerArea"></div>
+            </div>
+        </div>
+
+        <!-- 1. 쇼츠 슬라이더 -->
+        <section class="slider-section">
+            <div class="inner">
+                <div class="slider-header">
+                    <h3>Short-form</h3>
+                    <p>Vertical creative works.</p>
+                </div>
+
+                <div class="swiper shortsSwiper" data-aos="fade-up">
+                    <div class="swiper-wrapper">
+                        <!-- 
+                         data-video-url: 유튜브 주소 혹은 파일 경로 / 클릭 시 보이게 하기 위한 연결
+                         data-video-type: 'vertical' (세로) 또는 'horizontal' (가로) 
+                    -->
+                        <div class="swiper-slide video-card" data-video-url="./video/live/shorts_1.mp4"
+                            data-video-type="vertical">
+                            <div class="thumbnail-box aspect-shorts">
+
+                                <!-- 본인 작업 영상 -->
+                                <video src="./video/live/shorts_1.mp4"></video>
+
+                                <div class="play-overlay">
+                                    <div class="play-circle shorts-play">
+                                        <svg viewBox="0 0 24 24">
+                                            <path d="M8 5v14l11-7z" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="info-box">
+                                <h4 class="card-title">Modern Motion</h4>
+                                <p class="card-desc">Motion, Edit</p>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide video-card" data-video-url="./video/live/shorts_2.mp4"
+                            data-video-type="vertical">
+                            <div class="thumbnail-box aspect-shorts">
+
+                                <!-- 본인 작업 영상 -->
+                                <video src="./video/live/shorts_2.mp4"></video>
+
+                                <div class="play-overlay">
+                                    <div class="play-circle shorts-play">
+                                        <svg viewBox="0 0 24 24">
+                                            <path d="M8 5v14l11-7z" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="info-box">
+                                <h4 class="card-title">Branding Clip</h4>
+                                <p class="card-desc">Direction</p>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide video-card" data-video-url="./video/live/shorts_3.mp4"
+                            data-video-type="vertical">
+                            <div class="thumbnail-box aspect-shorts">
+
+                                <!-- 본인 작업 영상 -->
+                                <video src="./video/live/shorts_3.mp4"></video>
+                                <div class="play-overlay">
+                                    <div class="play-circle shorts-play">
+                                        <svg viewBox="0 0 24 24">
+                                            <path d="M8 5v14l11-7z" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="info-box">
+                                <h4 class="card-title">Direct File</h4>
+                                <p class="card-desc">MP4 Video</p>
+                            </div>
+                        </div>
+
+
+
+                        <div class="swiper-slide video-card" data-video-url="./video/live/shorts_4.mp4"
+                            data-video-type="vertical">
+                            <div class="thumbnail-box aspect-shorts">
+
+                                <!-- 본인 작업 영상 -->
+                                <video src="./video/live/shorts_4.mp4"></video>
+                                <div class="play-overlay">
+                                    <div class="play-circle shorts-play">
+                                        <svg viewBox="0 0 24 24">
+                                            <path d="M8 5v14l11-7z" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="info-box">
+                                <h4 class="card-title">Direct File</h4>
+                                <p class="card-desc">MP4 Video</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. 일반 영상 슬라이더 -->
+        <section class="slider-section">
+            <div class="inner">
+                <div class="slider-header">
+                    <h3>Featured Works</h3>
+                    <p>Main production projects.</p>
+                </div>
+
+                <div class="swiper videoSwiper" data-aos="fade-up">
+                    <div class="swiper-wrapper">
+                        <!-- 가로 카드 01 -->
+                        <div class="swiper-slide video-card" data-video-url="./video/brand_video.mp4"
+                            data-video-type="horizontal">
+                            <div class="thumbnail-box aspect-wide">
+
+                                <!-- 본인 작업 비디오 소스 -->
+                                <video src="./video/brand_video.mp4"></video>
+
+                                <div class="play-overlay">
+                                    <div class="play-circle wide-play">
+                                        <svg viewBox="0 0 24 24">
+                                            <path d="M8 5v14l11-7z" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="info-box">
+                                <h4 class="card-title">2024 Global Campaign</h4>
+                                <p class="card-desc">Directed the entire process from planning to final mastering.</p>
+                            </div>
+                        </div>
+
+                        <!-- 가로 카드 02 -->
+                        <div class="swiper-slide video-card" data-video-url="./video/20063220-uhd_3840_2160_24fps.mp4"
+                            data-video-type="horizontal">
+                            <div class="thumbnail-box aspect-wide">
+
+                                <!-- 본인 작업 비디오 소스 -->
+                                <video src="./video/20063220-uhd_3840_2160_24fps.mp4"></video>
+
+                                <div class="play-overlay">
+                                    <div class="play-circle wide-play">
+                                        <svg viewBox="0 0 24 24">
+                                            <path d="M8 5v14l11-7z" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="info-box">
+                                <h4 class="card-title">Cinematic Visualizer</h4>
+                                <p class="card-desc">Experimental visual implementation and sound design.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+
+<section id="contact">
+    <div class="inner contact-wrap">
+
+        <div class="contact-top">
+            <p>Portfolio {2022 - 2026}</p>
+        </div>
+
+        <div class="contact-center">
+            <p class="contact-sub">끝까지 봐주셔서 감사합니다.</p>
+
+            <h2 class="contact-title">
+                앞으로도 새로운 시선과 도전으로<br>
+                더 나은 디자인을 만들어가겠습니다.
+            </h2>
+        </div>
+
+        <div class="contact-bottom">
+            <img src="./images/contact_GOHANEUL.svg" alt="GO HANEUL">
+        </div>
+
+    </div>
+</section>
+
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <!-- js -->
+    <script src="js/script.js"></script>
+
+    <script>
+        AOS.init();
+    </script>
+
+</body>
+
+</html>
