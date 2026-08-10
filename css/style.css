@@ -21,6 +21,7 @@ body {
     font-family: 'DM Sans', sans-serif;
     font-size: 14px;
     line-height: 1.5;
+    color: #222222;
 }
 
 
@@ -549,35 +550,37 @@ line-height: 1.5;}
     margin-top: 24px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    
     padding: 0 8px;
     
 }
 
 .info-text h3 {
-    font-size: 1.25rem;
+    font-size: 1.70rem;
     font-weight: 700;
     color: #222222;
+    line-height: 0.5;
 }
 
 .info-text p {
     font-size: 0.875rem;
     color: #555555;
-    margin-top: 4px;
+    margin-top: 10px;
     font-weight: 500;
 }
 
 .skill-icon {
     display: flex;
-    align-items: center;
+   
     gap: 0 8px;
 }
 
 .skill-icon img {
     display: block;
-    width: 30px;
-    height: 30px;
+    width: 20px;
+    height: 20px;
 }
+.skill-icon .flow{ width: 40px;}
 
 /* video */
 /* Swiper */
@@ -811,6 +814,7 @@ line-height: 1.5;}
 .contact-title{
     font-size: 30px;
     line-height:1.5;
+
 }
 
 .contact-bottom{
@@ -820,6 +824,9 @@ line-height: 1.5;}
 .contact-bottom img{
     width:120px;
 }
+
+.contact-sub2{margin-top: 20px;
+color: #555555;}
 
 /* ===== 반응형 ===== */
 /* min-width */
