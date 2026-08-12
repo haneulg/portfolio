@@ -572,7 +572,7 @@ nav a:hover {
 }
 
 .info-text h3 {
-    font-size: 1.70rem;
+    font-size: 1.50rem;
     font-weight: 700;
     color: #222222;
     line-height: 0.5;
@@ -581,7 +581,7 @@ nav a:hover {
 .info-text p {
     font-size: 0.875rem;
     color: #555555;
-    margin-top: 10px;
+    margin-top: 13px;
     font-weight: 500;
 }
 
