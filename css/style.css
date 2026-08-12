@@ -56,7 +56,7 @@ section {
 .arrow-button {
     width: 48px;
     height: 32px;
-    
+
     /* 밝은 배경용 버튼 색상 */
     border: 1px #222222 solid;
     border-radius: 20px;
@@ -86,15 +86,17 @@ header {
     height: 80px;
     z-index: 100;
     transition: all .3s ease;
-   /*background: rgba(0, 0, 0, 0.4);
-    backdrop-filter: blur(10px);*/ 
+    /*background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(10px);*/
 }
+
 /* 메인배너를 지나간 후 */
 header.scrolled {
-    background: rgba(255,255,255,.9);
+    background: rgba(255, 255, 255, .9);
     backdrop-filter: blur(10px);
-    box-shadow: 0 4px 20px rgba(0,0,0,.08);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, .08);
 }
+
 /* 로고 */
 header.scrolled .logo {
     color: #aaa;
@@ -125,6 +127,7 @@ header.scrolled .contact-btn a.active {
 header.scrolled .menu-toggle span {
     background: #aaa;
 }
+
 /* 메인배너를 지나간 후 여기까지*/
 
 
@@ -277,8 +280,8 @@ nav a:hover {
     text-align: center;
     margin-top: 150px;
 
-   
-    
+
+
 }
 
 .banner_content h1 {
@@ -294,10 +297,11 @@ nav a:hover {
     max-width: 1900px;
 
     border-radius: 999px;
-   border: 1px #222222 solid;
-   padding: 20px;
-   background: #f5f5f5;
-    
+    border: 1px #222222 solid;
+    padding: 20px;
+    background-image: url(../images/painted-relief-texture.jpg);
+    background-repeat: no-repeat;
+
 }
 
 .stat strong {
@@ -306,7 +310,9 @@ nav a:hover {
     color: #222222;
 }
 
-.stat img{color: #B78DDA;}
+.stat img {
+    color: #B78DDA;
+}
 
 /* ===== container ===== */
 .container {
@@ -328,9 +334,9 @@ nav a:hover {
 }
 
 .about-me {
-    max-width:600px;
-    width:100%;
-    margin:0 auto;
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
 }
 
 .about-me video {
@@ -439,7 +445,7 @@ nav a:hover {
     display: grid;
     grid-template-columns: 1fr;
     gap: 48px;
-    
+
 }
 
 .project-thumb {
@@ -468,12 +474,12 @@ nav a:hover {
 }
 
 .project-info h1 {
-    
+
     font-weight: 900;
     font-size: 2.0rem;
     border-top: #222222 2px solid;
     padding-top: 10px;
-    
+
 }
 
 
@@ -483,7 +489,7 @@ nav a:hover {
     margin-top: 32px;
     margin-bottom: 32px;
     line-height: 1.5;
- 
+
 }
 
 
@@ -493,22 +499,32 @@ nav a:hover {
     gap: 12px;
     font-weight: 700;
 }
-.fitme_title h2{
+
+.fitme_title h2 {
     font-weight: 900;
     font-size: 4.5rem;
     line-height: 0.5;
 
 }
 
-.fitme_title p{color: #222222;
-line-height: 1.5;}
-.fitme_title .Platform{font-weight: 700;}
-.fitme_title{
+.fitme_title p {
+    color: #222222;
+    line-height: 1.5;
+}
+
+.fitme_title .Platform {
+    font-weight: 700;
+}
+
+.fitme_title {
     display: flex;
     justify-content: space-between;
     padding-bottom: 80px;
-    
+    flex-wrap: wrap;
+    gap: 30px;
+
 }
+
 /* artwork */
 .portfolio-grid {
     display: grid;
@@ -550,9 +566,9 @@ line-height: 1.5;}
     margin-top: 24px;
     display: flex;
     justify-content: space-between;
-    
+
     padding: 0 8px;
-    
+
 }
 
 .info-text h3 {
@@ -571,7 +587,7 @@ line-height: 1.5;}
 
 .skill-icon {
     display: flex;
-   
+
     gap: 0 8px;
 }
 
@@ -580,7 +596,10 @@ line-height: 1.5;}
     width: 20px;
     height: 20px;
 }
-.skill-icon .flow{ width: 40px;}
+
+.skill-icon .flow {
+    width: 40px;
+}
 
 /* video */
 /* Swiper */
@@ -786,47 +805,49 @@ line-height: 1.5;}
 
 
 /* ===== Contact ===== */
-#contact{
-    padding:80px 0 50px;
-    background:url("../images/painted-relief-texture.jpg") center/cover;
+#contact {
+    padding: 80px 0 50px;
+    background: url("../images/painted-relief-texture.jpg") center/cover;
 }
 
-.contact-wrap{
-    display:flex;
-    flex-direction:column;
-    align-items:center;
+.contact-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.contact-top{
+.contact-top {
     font-weight: 700;
-    margin-bottom:100px;
+    margin-bottom: 100px;
 }
 
-.contact-center{
-    text-align:center;
+.contact-center {
+    text-align: center;
 }
 
-.contact-sub{
+.contact-sub {
     font-size: 20px;
-    margin-bottom:24px;
+    margin-bottom: 24px;
 }
 
-.contact-title{
+.contact-title {
     font-size: 30px;
-    line-height:1.5;
+    line-height: 1.5;
 
 }
 
-.contact-bottom{
-    margin-top:120px;
+.contact-bottom {
+    margin-top: 120px;
 }
 
-.contact-bottom img{
-    width:120px;
+.contact-bottom img {
+    width: 120px;
 }
 
-.contact-sub2{margin-top: 20px;
-color: #555555;}
+.contact-sub2 {
+    margin-top: 20px;
+    color: #555555;
+}
 
 /* ===== 반응형 ===== */
 /* min-width */
@@ -881,6 +902,7 @@ color: #555555;}
     .info-card-wrap {
         flex-wrap: wrap;
     }
+
     .info-card {
         width: 100%;
     }
@@ -896,7 +918,8 @@ color: #555555;}
         grid-template-columns: repeat(2, 1fr);
         gap: 40px;
     }
-    .main_banner{
+
+    .main_banner {
         height: 700px;
     }
 
@@ -970,7 +993,8 @@ color: #555555;}
     .slider-section .swiper-pagination {
         bottom: var(--swiper-pagination-bottom, -3px);
     }
-    .main_banner{
+
+    .main_banner {
         height: 400px;
         min-height: 600px;
     }
@@ -986,7 +1010,8 @@ color: #555555;}
     .stat strong {
         font-size: 22px;
     }
-.main_banner{
+
+    .main_banner {
         height: 300px;
         min-height: 400px;
     }
