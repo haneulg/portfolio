@@ -385,6 +385,8 @@ nav a:hover {
     border-bottom: 0;
 }
 
+
+
 .timeline-year {
     color: #B78DDA;
     font-weight: 700;
@@ -401,6 +403,8 @@ nav a:hover {
     color: #555555;
     font-size: 0.96rem;
 }
+
+
 
 .info-card-wrap {
     display: flex;
