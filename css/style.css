@@ -299,8 +299,11 @@ nav a:hover {
     border-radius: 999px;
     border: 1px #222222 solid;
     padding: 20px;
+
     background-image: url(../images/painted-relief-texture.jpg);
     background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 
 }
 
@@ -391,7 +394,7 @@ nav a:hover {
 .timeline-role strong {
     display: block;
     margin-bottom: 4px;
-    font-size: 16px;
+    font-size: 18px;
 }
 
 .timeline-role span {
