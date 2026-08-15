@@ -532,6 +532,15 @@ nav a:hover {
 
 }
 
+.video-link{ display: block;
+    cursor: pointer;
+}
+
+.video-link video {
+    display: block;
+    width: 100%;
+}
+
 /* artwork */
 .portfolio-grid {
     display: grid;
@@ -607,6 +616,9 @@ nav a:hover {
 .skill-icon .flow {
     width: 40px;
 }
+
+
+
 
 /* video */
 /* Swiper */
